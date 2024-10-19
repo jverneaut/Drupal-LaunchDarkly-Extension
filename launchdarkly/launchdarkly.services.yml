@@ -1,0 +1,10 @@
+services:
+  launchdarkly.service:
+    class: Drupal\launchdarkly\Service\LaunchDarklyService
+    arguments: ['@current_user']
+
+  launchdarkly.twig_extension:
+    class: Drupal\launchdarkly\Twig\Extension\LaunchDarklyTwigExtension
+    arguments: ['@launchdarkly.service']
+    tags:
+      - { name: twig.extension }

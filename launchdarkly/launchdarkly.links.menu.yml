@@ -1,0 +1,5 @@
+launchdarkly.settings:
+  title: LaunchDarkly
+  parent: system.admin_config_system
+  route_name: launchdarkly.settings
+  weight: 10

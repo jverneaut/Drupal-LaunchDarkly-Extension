@@ -1,0 +1,7 @@
+launchdarkly.settings:
+  path: '/admin/config/system/launchdarkly'
+  defaults:
+    _title: 'LaunchDarkly'
+    _form: 'Drupal\launchdarkly\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
